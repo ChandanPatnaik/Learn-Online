@@ -1,0 +1,80 @@
+.intro {
+  display: flex;
+  height: 90vh;
+  margin-top: 6rem;
+}
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.i-intro{
+  display: flex;
+  flex-direction: column;
+}
+.i-intro>:nth-child(1){
+  color: var(--black);
+  font-weight: bold;
+  font-size: 2rem;
+}
+.i-intro>:nth-child(2){
+  color: var(--orange);
+  font-size: 1rem;
+}
+.i-button{
+  width: 6rem;
+  height: 2rem;
+}
+.i-icons{
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+.i-icons>*{
+  transform: scale(0.5);
+}
+.i-icons>*:hover{
+  cursor: pointer;
+}
+
+.i-right{
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+.i-right>*{
+  position: absolute;
+  z-index:1;
+}
+.i-right:last-child{
+  transform: scale(0.60);
+  top: -6rem;
+}
+@media  screen and (max-width: 1050px){
+  .intro {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+.i-right{
+  display: none;
+}
+}
+@media  screen and (max-width: 500px){
+  .intro{
+    height: 45vh;
+  }
+  .i-intro>:nth-child(1){
+    color: var(--black);
+    font-size: 1.5rem;
+  }
+  .i-intro>:nth-child(2){
+    font-size: .8rem;
+    margin: 0px;
+  }.i-icons{
+    margin-top: 0rem;
+  }.i-icons>*{
+    transform: scale(0.3);
+  }
+}

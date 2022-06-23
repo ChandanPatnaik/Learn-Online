@@ -1,0 +1,118 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  height: 100vh;
+}
+.a-left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex: 1;
+  text-align: start;
+  margin: 1rem;
+}
+.a-left h3 {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.a-left p {
+  font-size: 0.8rem;
+}
+.a-button {
+  width: 6rem;
+  height: 2rem;
+  align-items: flex-start;
+}
+
+.a-right {
+  position: relative;
+  flex: 1;
+}
+.a-maincircle {
+  left: 9rem;
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top: 2rem;
+  background: #fff;
+}
+.a-maincircle > :nth-child(1) {
+  top: -6rem;
+  left: 2.5rem;
+  position: absolute;
+}
+.a-maincircle > :nth-child(2) {
+  top: 2rem;
+  left: -6rem;
+  position: absolute;
+}
+.a-maincircle > :nth-child(3) {
+  top: 2.5rem;
+  left: 3rem;
+  position: absolute;
+}
+.a-maincircle > :nth-child(4) {
+  top: 2rem;
+  left: 11.5rem;
+  position: absolute;
+}
+.a-maincircle > :nth-child(5) {
+  top: 11.5rem;
+  left: 3rem;
+  position: absolute;
+}
+.a-seccircle {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  position: absolute;
+  border: 5px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  box-shadow: var(--smboxShadow);
+  background: white;
+}
+.a-seccircle > img {
+  transform: scale(0.6);
+}
+.a-backcircle {
+  position: absolute;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  z-index: -1;
+}
+.bluecircle {
+  background: #194988;
+  left: 14rem;
+  top: -4rem;
+}
+.yellowcircle {
+  background: #f5c32c;
+  left: 13rem;
+  top: 6rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .about {
+    flex-direction: column;
+    height: 70vh;
+  }
+  .a-right {
+    left: -5rem;
+    transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 550px) {
+  .a-right{
+    transform: scale(0.5);
+  }
+}

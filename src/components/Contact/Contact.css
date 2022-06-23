@@ -1,0 +1,51 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.co-left,
+.co-right {
+  flex: 1;
+  display: flex;
+}
+.co-left h3 {
+  font-size: 2rem;
+  color: var(--black);
+}
+.co-right form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 3rem 0;
+  padding: 1rem;
+  box-shadow: 25px 25px rgba(0 0 0/ 10%);
+  border: none;
+  border-radius: 20px;
+  border: 1px solid var(--purple);
+}
+.co-right form > input {
+  margin: 1rem 0;
+  border: none;
+  border-bottom: 1px solid var(--orange);
+  padding: 0.2rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: var(--black);
+  outline: none;
+  padding: 10px 20px;
+}
+.s-btn {
+  width: 6rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .contact {
+    flex-direction: column;
+    top: -5rem;
+  }
+  .co-right form {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
